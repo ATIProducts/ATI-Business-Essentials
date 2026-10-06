@@ -1,0 +1,30 @@
+# ATI Business Essentials
+
+> ATI Business Essentials is an Arvada, Colorado company that builds Leads Plus, a lead and bid tracking platform for service businesses, and manages Google Ads, marketing, safety compliance, and website support for contractors nationwide.
+
+Key facts:
+- Legal name: ATI Business Essentials, LLC, a wholly owned subsidiary of ATI Products, LLC (sister company: ATI Construction Products, https://ati-constructionproducts.com/).
+- Location: Arvada, CO, USA. Serves service businesses nationwide.
+- Phone: (800) 360-6115. Email: info@ati-businessessentials.com.
+- Flagship product: Leads Plus, a lead and bid tracking platform that syncs qualified leads and quote values to Google Ads. From $299/month plus $699 onboarding.
+- Also offers: Marketing Hub software, managed Google Ads, Google Ads support and training, safety portal (ISNetworld, Avetta, Veriforce) compliance management, SiteDocs safety software, OSHAWise and MSHAWise, and Fix My Site website support.
+
+## Pages
+- [Home: Leads Plus](https://ati-businessessentials.com/): Leads Plus tracks every lead, call, and bid for contractors and service businesses, then sends qualified-lead data to Google Ads so you get better jobs. Book a free strategy call.
+- [Leads Plus](https://ati-businessessentials.com/leads-plus): Leads Plus captures website leads and calls, tracks bids from New to Won, and syncs qualified leads and quote values to Google Ads. From $299/month with unlimited users.
+- [Marketing](https://ati-businessessentials.com/marketing): Three ways to grow: Marketing Hub software, done-for-you paid ads management, or guided Google Ads support. Built for service businesses by Google-certified specialists.
+- [Services](https://ati-businessessentials.com/services): Beyond Leads Plus, ATI Business Essentials manages safety prequalification portals, resells SiteDocs safety software, offers OSHAWise and MSHAWise, and fixes WordPress websites.
+- [Safety Portal Compliance](https://ati-businessessentials.com/safety-portal-maintenance): ATI manages your contractor safety prequalification across ISNetworld, Avetta, Veriforce, Highwire, ComplyWorks, and Browz. 20+ years of experience. $100/hour.
+- [Safety Compliance Software](https://ati-businessessentials.com/safety-compliance-software): SiteDocs digitizes toolbox talks, JSAs, FLRAs, inspections, and OSHA 300 logs, with offline mode and certification alerts. Book a demo through ATI for an automatic 10% discount.
+- [OSHA & MSHA Companion](https://ati-businessessentials.com/osha-msha): OSHAWise and MSHAWise put OSHA and MSHA regulations, interpretations, and case law in one AI-powered platform. $228 per subscription through ATI Business Essentials.
+- [Fix My Site](https://ati-businessessentials.com/fix-my-site): Website repair and support for service businesses: broken pages, malware cleanup, speed optimization, migrations, and monthly plans from $200. No long-term contracts.
+- [Pricing](https://ati-businessessentials.com/pricing): Transparent pricing. Leads Plus from $299/month, Marketing Hub $299/month, Google Ads management from $450/month, landing pages and websites from $65/month hosting.
+- [About ATI Business Essentials](https://ati-businessessentials.com/about): ATI Business Essentials, an ATI Products, LLC company in Arvada, Colorado, helps service businesses track leads and bids and grow with smarter Google Ads. Meet founders Darren Franz and Sabra Starr.
+- [Contact Us](https://ati-businessessentials.com/contact): Book a free strategy call with ATI Business Essentials. Call (800) 360-6115 or send a message about Leads Plus, Google Ads, Marketing Hub, safety compliance, or website support.
+- [FAQ](https://ati-businessessentials.com/faq): Every question and answer from across the site in one place.
+
+## Optional
+- [Full site content in one file](https://ati-businessessentials.com/llms-full.txt)
+- [Privacy Policy](https://ati-businessessentials.com/privacy-policy): How ATI Business Essentials, LLC collects, uses, and protects information gathered through ati-businessessentials.com, and your state privacy rights.
+- [Terms and Conditions](https://ati-businessessentials.com/terms-and-conditions): Terms of Service for using ati-businessessentials.com and purchasing products and services from ATI Business Essentials. Governed by Colorado law.
+- [Shipping and Return Policy](https://ati-businessessentials.com/shipping-return-policy): Shipping turnaround, carriers, tracking, returns within 30 days, return exceptions for digital products, and the 20% restocking fee at ATI Business Essentials.
