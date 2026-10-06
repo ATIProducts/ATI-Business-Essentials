@@ -8,3 +8,4 @@
 - Structured data lives in each page's `<script type="application/ld+json">`. If prices or key facts change, update the matching JSON-LD, `llms.txt` and `llms-full.txt` too.
 - Leads are delivered by `api/contact.js` (Resend email and/or webhook). Never store leads in this repo; it is public.
 - Copy rules: no em dashes. Keep WCAG AA contrast: `--green` (#00B74F) only on dark backgrounds, `--green-ink` (#00843D) on light ones.
+- `assets/site.css` and `assets/site.js` are cached for a year and loaded as `?v=YYYYMMDD`. After changing either file, bump the `?v=` value in every page and in `admin/templates/*.html`, or returning visitors keep the old copy.
