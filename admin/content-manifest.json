@@ -1,0 +1,84 @@
+{
+  "pages": [
+    {
+      "file": "index.html",
+      "title": "Home (Leads Plus)",
+      "group": "Pages"
+    },
+    {
+      "file": "leads-plus.html",
+      "title": "Leads Plus",
+      "group": "Pages"
+    },
+    {
+      "file": "marketing.html",
+      "title": "Marketing",
+      "group": "Pages"
+    },
+    {
+      "file": "services.html",
+      "title": "Services",
+      "group": "Pages"
+    },
+    {
+      "file": "safety-portal-maintenance.html",
+      "title": "Safety Portal Compliance",
+      "group": "Pages"
+    },
+    {
+      "file": "safety-compliance-software.html",
+      "title": "Safety Compliance Software (SiteDocs)",
+      "group": "Pages"
+    },
+    {
+      "file": "osha-msha.html",
+      "title": "OSHA & MSHA Companion",
+      "group": "Pages"
+    },
+    {
+      "file": "fix-my-site.html",
+      "title": "Fix My Site",
+      "group": "Pages"
+    },
+    {
+      "file": "pricing.html",
+      "title": "Pricing",
+      "group": "Pages"
+    },
+    {
+      "file": "about.html",
+      "title": "About",
+      "group": "Pages"
+    },
+    {
+      "file": "contact.html",
+      "title": "Contact",
+      "group": "Pages"
+    },
+    {
+      "file": "faq.html",
+      "title": "FAQ",
+      "group": "Pages"
+    },
+    {
+      "file": "blog.html",
+      "title": "Blog (listing page)",
+      "group": "Pages"
+    },
+    {
+      "file": "privacy-policy.html",
+      "title": "Privacy Policy",
+      "group": "Pages"
+    },
+    {
+      "file": "terms-and-conditions.html",
+      "title": "Terms and Conditions",
+      "group": "Pages"
+    },
+    {
+      "file": "shipping-return-policy.html",
+      "title": "Shipping and Return Policy",
+      "group": "Pages"
+    }
+  ]
+}
