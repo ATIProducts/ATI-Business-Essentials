@@ -37,7 +37,7 @@ function gtag(){dataLayer.push(arguments);}
 var c = null; try { c = localStorage.getItem('ati_consent'); } catch (e) {}
 var g = c === 'granted' ? 'granted' : 'denied';
 gtag('consent', 'default', { ad_storage: g, analytics_storage: g, ad_user_data: g, ad_personalization: g, wait_for_update: 500 });
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPFWLV7C');
+(function(){var done=false,ev=['scroll','pointerdown','pointermove','touchstart','keydown'];function load(){if(done)return;done=true;ev.forEach(function(e){removeEventListener(e,load,true)});(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPFWLV7C');}ev.forEach(function(e){addEventListener(e,load,{capture:true,passive:true})});addEventListener('load',function(){setTimeout(load,3500)});window.atiLoadTags=load;})();
 </script>
 </head>
 <body><a class="skip" href="#content">Skip to content</a>
