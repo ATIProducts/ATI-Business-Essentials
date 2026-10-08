@@ -97,4 +97,59 @@
     });
     document.body.appendChild(bar);
   }
+  // ---------- Motion: sections slide in as you scroll, numbers count up ----------
+  // Skipped for visitors whose device asks for reduced motion, and in the admin editor (no scripts run there).
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  }
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    var SEL = '.section .section-head, .section .card, .section .split > *, .section .stats > li, .section .steps > li, .section .faq > details, .section .answer-box, .section .prose > h2, .section .prose > p, .section .prose > ul, .section .form-card, .section .pill-list, .section .checklist, .section .contact-points, .section .wrap > h2, .section .wrap > .lead, .section .wrap > .btn-row, .section .blog-card';
+    var els = Array.prototype.slice.call(document.querySelectorAll(SEL));
+    var picked = els.filter(function (el) {
+      for (var p = el.parentElement; p; p = p.parentElement) if (els.indexOf(p) !== -1) return false; // no nested reveals
+      return !el.closest('.hero');
+    });
+    var count = function (el) {
+      var m = /^(\D*)(\d+(?:\.\d+)?)(.*)$/.exec(el.textContent.trim());
+      if (!m || el.getAttribute('data-counted')) return;
+      el.setAttribute('data-counted', '1');
+      var final = el.textContent, target = parseFloat(m[2]), dec = (m[2].split('.')[1] || '').length, t0 = null;
+      el.setAttribute('aria-label', final.trim());
+      var step = function (t) {
+        if (t0 === null) t0 = t;
+        var k = Math.min((t - t0) / 1400, 1), e = 1 - Math.pow(1 - k, 3);
+        el.textContent = k < 1 ? m[1] + (target * e).toFixed(dec) + m[3] : final;
+        if (k < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        io.unobserve(el);
+        el.classList.add('in');
+        var nums = el.matches('.stat-value') ? [el] : el.querySelectorAll('.stat-value');
+        for (var i = 0; i < nums.length; i++) count(nums[i]);
+        // once in place, hand the element back to the normal hover effects
+        setTimeout(function () { el.classList.remove('reveal', 'in'); el.style.transitionDelay = ''; el.removeAttribute('data-from'); }, 1600);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    var groups = new Map();
+    picked.forEach(function (el) {
+      var parent = el.parentElement, n = groups.get(parent) || 0;
+      groups.set(parent, n + 1);
+      if (el.parentElement.classList.contains('split')) {
+        var isMedia = el.classList.contains('split-media'), left = el.parentElement.classList.contains('img-left');
+        el.setAttribute('data-from', isMedia === left ? 'left' : 'right');
+      } else if (el.matches('.form-card, .answer-box')) el.setAttribute('data-from', 'zoom');
+      if (n) el.style.transitionDelay = Math.min(n, 5) * 0.1 + 's';
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+    document.documentElement.classList.add('anim');
+  }
 })();
